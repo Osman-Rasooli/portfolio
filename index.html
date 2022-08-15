@@ -34,13 +34,13 @@
                 
                 <!--Menu Items-->
                 <div class="hidden md:flex space-x-6">
-                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">Work</a>
-                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">Skills</a>
-                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">About</a>
-                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">Design Process</a>
-                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">Testimonials</a>
+                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Work</a>
+                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Skills</a>
+                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">About</a>
+                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Design Process</a>
+                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Testimonials</a>
                     <!--<a href="#" class="text-white hover:text-sky-600 cursor-pointer">Blog</a>-->
-                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">Contact</a>
+                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Contact</a>
 
                     
                 </div>
@@ -67,19 +67,19 @@
             </div>
         </nav>
         <!--HERO-->
-        <div class="container flex flex-col md:flex-row  pt-6 mx-auto md:mt-20 space-y-0 md:space-y-0 ">
+        <div class="container relative flex flex-col md:flex-row  pt-6 mx-auto md:mt-20 space-y-0 md:space-y-0 ">
             <!--Left Side-->
             <div class="flex flex-col mb-10 md:w-1/2 xl:ml-12 relative z-10">
-                <h3 class="max-w-md text-md text-center md:text-left text-white z-10">Hi, I am</h3>
-                <h1 class="max-w-md text-4xl my-8 font-splash leading-none font-bold text-center md:text-5xl lg:text-6xl md:text-left">Osman Rasooli</h1>
-                <h2 class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl lg:mt-5  md:text-left z-10">A Full Stack Web Developer</h2>
-                <h2 class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl  md:text-left md:text-left">A UX/UI Designer</h2>
+                <h3 class="max-w-md text-md text-center md:text-left text-white  z-10">Hi, I am</h3>
+                <h1 class="max-w-md text-4xl my-8 md:mt-32 font-raleway leading-none uppercase font-bold text-center md:text-5xl lg:text-5xl md:text-left">Osman Rasooli</h1>
+                <h2 class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl lg:mt-0  md:text-left z-10">A Full Stack Web Developer</h2>
+                <h2 class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl md:text-left">A UX/UI Designer</h2>
             </div>
             <!--Right Side-->
             <div class="md:w-1/2 relative z-10">
                 <img  src="./assets/SoftwareDeveloper.svg" alt="Web Developer">
             </div>
-            <div class="hidden  md:block md:absolute md:font-light text-gray-200 lg:text-9xl md:text-8xl bottom-36 tracking-widest z-1">
+            <div class="hidden md:block md:absolute md:font-light text-gray-200 opacity-40 lg:text-9xl md:text-8xl md:top-14  tracking-widest z-1">
                 <h1 class="font-splash pl-10">Osman Rasooli</h1>
             </div>
         </div>
@@ -393,6 +393,38 @@
 
         
     </main>
+    <footer class="bg-color1 text-white">
+        <div class="container mx-auto w-full flex flex-col justify-around items-center p-5 md:flex-row">
+            <div class="md:w-1/4">
+                <h2 class="font-splash text-3xl font-bold my-5">Osman Rasooli</h2>
+                <p class="mb-5 text-gray-400">&copy; 2022, Built and designed by <br> <span class="font-raleway text-gray-400 tracking-wider uppercase leading-10">Osman Rasooli</span></p>
+            </div>
+            <div class="flex flex-col items-center md:w-1/4">
+                <h2 class="uppercase text-xl mb-4">Links</h2>
+                <div class="flex font-sans text-gray-400">
+                    <div class="flex flex-col justify-around mx-5 uppercase ">
+                        <a class="hover:text-sky-600 cursor-pointer" href="">Work</a>
+                        <a class="hover:text-sky-600 cursor-pointer" href="">Skills</a>
+                        <a class="hover:text-sky-600 cursor-pointer" href="">About</a>
+                    </div>
+                    <div class="flex flex-col uppercase ">
+                        <a class="hover:text-sky-600 cursor-pointer" href="">Design Process</a>
+                        <a class="hover:text-sky-600 cursor-pointer" href="">Testimonials</a>
+                        <a class="hover:text-sky-600 cursor-pointer" href="">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/4 mt-7">
+                <h2 class="mb-4">Get in touch</h2>
+                <div class="flex gap-5">
+                    <a href=""><i class="fa-brands fa-square-github text-5xl hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin text-5xl hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter text-5xl hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope text-5xl hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
