@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,200&family=Splash&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**********************PRELOADER***********/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 1000;
+}
+
+.gooey {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 142px;
+    height: 40px;
+    margin: -20px 0 0 -71px;
+    background: #fff;
+    filter: contrast(20);
+}
+.gooey .dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    filter: blur(4px);
+    background: #091353;
+    border-radius: 50%;
+    transform: translateX(0);
+    animation: dot 2.8s infinite;
+}
+.gooey .dots {
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: dots 2.8s infinite;
+}
+.gooey .dots span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(4px);
+    background: #091353;
+    border-radius: 50%;
+}
+@keyframes dot {
+    50% {
+        transform: translateX(96px);
+    }
+}
+@keyframes dots {
+    50% {
+        transform: translateX(-31px);
+    }
+}
+
+
+/***********************Hamburger*****************/
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(0);
+    transition: all .5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+#menu {
+    transition: all .5s ease-in-out;
+}
+
+#menu div {
+    transition-delay: 5s;
+}
+
+.menu-btn-open-style {
+    background-color: #000;
+}
+
+
+/*****************************************************/
+
+/*******************************************/
+#hero {
+    background-image: url('../assets/layered-waves-haikei\ \(1\).svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: 1;
+}
+
+.skills-container {
+    background-image: url(../assets/circle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.skills-bg {
+    background-image: url(../assets/circle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.r-tabs-accordion-title {
+    text-align: center;
+}
+
+.r-tabs-accordion-title .r-tabs-anchor {
+    color: white;
+    border-bottom: 1px solid #9D84B7;
+    padding-bottom: 1px;
+}
+
+
+.tabs .process-tabs {
+    padding: 0 1em;
+}
+
+.process-tabs .r-tabs-nav {
+    margin-bottom: 10px;
+}
+
+.process div:nth-child(1) {
+    padding: 1em 2em;
+    margin-bottom: 1em;
+}
+
+
+.swiper {
+    width: 90%;
+    height: 600px;
+  }
+
+div.my-slider .swiper.mySwiper {
+    height: auto;
+}
+.swiper-wrapper .swiper-slide.swiper-slide-active {
+    height: auto;
+}
+.swiper.mySwiper div.swiper-button-prev::after,
+.swiper.mySwiper div.swiper-button-next::after {
+    font-size: large;
+}
+
+  @media screen and (min-width: 768px) {
+    .swiper {
+        width: 500px;
+        margin-top: 2em;
+    }
+  }
+  @media screen and (min-width: 830px) {
+    .swiper {
+        width: 600px;
+        margin-top: 2em;
+    }
+  }
+  @media screen and (min-width: 976px) {
+    .swiper {
+        width: 650px;
+    }
+    .r-tabs-tab a.r-tabs-anchor span{
+        display: none;
+    }
+  }
+
+
+@media screen and (max-width: 768px) {
+    #process-call .process, #process-design .process, #process-build .process, #process-launch .process {
+        display: flex;
+        flex-direction: column;
+    }
+    .process div:nth-child(1) {
+        padding: 1em 2em;
+        margin-bottom: 1em;
+    }
+    .process-tabs .r-tabs-state-active a {
+        color: #9D84B7;
+    }
+    
+}

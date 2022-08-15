@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osman Rasooli</title>
+    <script src="https://kit.fontawesome.com/4e50d35c46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./node_modules/responsive-tabs/css/responsive-tabs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./dist/style.css">
+
+</head>
+<body class="relative"> 
+    <div id="preloader">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <header  id="hero" >
+        <!--NAVBAR-->
+        <nav class="container mx-auto p-4">
+            <!--Flex Container-->
+            <div class="flex items-center justify-between sm:justify-between">
+                <!--LOGO Text-->
+                <a href="/" id="hero-name" class="font-splash font-bold text-white z-40 text-lg">Osman Rasooli</a>
+                
+                <!--absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold z-10000 bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md-->
+                
+                <!--Menu Items-->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">Work</a>
+                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">Skills</a>
+                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">About</a>
+                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">Design Process</a>
+                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">Testimonials</a>
+                    <!--<a href="#" class="text-white hover:text-sky-600 cursor-pointer">Blog</a>-->
+                    <a href="#" class="text-white hover:text-sky-600 cursor-pointer">Contact</a>
+
+                    
+                </div>
+                <!--Hamburger Menu-->
+                <button id="menu-btn" class="block hamburger md:hidden z-40 focus:outline-none">
+                    <span class="hamburger-top "></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            <div class="">
+                <!--Mobile Menu-->
+                <div id="menu" class="fixed bottom-0 right-0 w-0 opacity-0 bg-white z-30 md:hidden">
+                    <div class=" flex flex-col justify-center items-center h-screen">
+                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">Work</a>
+                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">Skills</a>
+                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">About</a>
+                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">Design Process</a>
+                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">Testimonials</a>
+                        <!--<a href="#" class="hover:text-sky-600 cursor-pointer">Blog</a>-->
+                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--HERO-->
+        <div class="container flex flex-col md:flex-row  pt-6 mx-auto md:mt-20 space-y-0 md:space-y-0 ">
+            <!--Left Side-->
+            <div class="flex flex-col mb-10 md:w-1/2 xl:ml-12 relative z-10">
+                <h3 class="max-w-md text-md text-center md:text-left text-white z-10">Hi, I am</h3>
+                <h1 class="max-w-md text-4xl my-8 font-splash leading-none font-bold text-center md:text-5xl lg:text-6xl md:text-left">Osman Rasooli</h1>
+                <h2 class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl lg:mt-5  md:text-left z-10">A Full Stack Web Developer</h2>
+                <h2 class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl  md:text-left md:text-left">A UX/UI Designer</h2>
+            </div>
+            <!--Right Side-->
+            <div class="md:w-1/2 relative z-10">
+                <img  src="./assets/SoftwareDeveloper.svg" alt="Web Developer">
+            </div>
+            <div class="hidden  md:block md:absolute md:font-light text-gray-200 lg:text-9xl md:text-8xl bottom-36 tracking-widest z-1">
+                <h1 class="font-splash pl-10">Osman Rasooli</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Projects-->
+        <section id="projects" class=" my-5 md:my-10">
+            <div class="heading px-5 my-5 md:px-10 xl:px-20">
+                <h1 class="font-raleway uppercase text-xl font-bold text-color1 tracking-wider">Projects</h1>
+                <h3 class="font-splash font-bold text-color2 tracking-widest text-xl -mt-1">My Works</h3>
+            </div>
+            <div class="bg-slate-100 py-10 md:py-20 lg:py-20">
+                <div class="container mx-auto ">
+                    <div class="flex flex-col flex-wrap  md:flex-row justify-center md:gap-10">
+                        <div class="card  flex-shrink-0 basis-80  shadow-md rounded-md mb-8 md:mb-0 bg-color1 flex flex-col">
+                            <div class="project-image flex rounded-md">
+                                <img class="flex-1" src="./assets/weather.png" alt="Weather App">
+                            </div>
+                            <div class="project-info p-5 text-white">
+                                <h1 class="mb-5 text-color2">Weather App</h1>
+                                <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, voluptate.</p>
+                                <button class="inline-block bg-color2 text-color1 text-xl font-bold mr-5 px-5 py-1 rounded-lg shadow-md md:mb-3 lg:mb-0">&lt; &gt;</button>
+                                <button class="inline-block bg-color2 text-color1 text-lg font-bold  mr-5 px-5 py-1 rounded-lg shadow-md">Demo</button>
+                            </div>
+                        </div>
+                        <div class="card flex-shrink-0 basis-80   shadow-md rounded-md mb-8 md:mb-0 bg-color1 flex flex-col">
+                            <div class="project-image flex rounded-md">
+                                <img class="flex-1" src="./assets/todo.webp" alt="Weather App">
+                            </div>
+                            <div class="project-info p-5 text-white">
+                                <h1 class="mb-5 text-color2">ToDo App</h1>
+                                <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, voluptate.</p>
+                                <button class="inline-block bg-color2 text-color1 text-xl font-bold mr-5 px-5 py-1 rounded-lg shadow-md md:mb-3 lg:mb-0">&lt; &gt;</button>
+                                <button class="inline-block bg-color2 text-color1 text-lg font-bold  mr-5 px-5 py-1 rounded-lg shadow-md">Demo</button>
+                            </div>
+                        </div>
+                        <div class="card flex-shrink-0 basis-80  shadow-xl rounded-md mb-8 md:mb-0 bg-color1 flex flex-col">
+                            <div class="project-image flex rounded-md">
+                                <img class="flex-1" src="./assets/fashion.webp" alt="Weather App">
+                            </div>
+                            <div class="project-info p-5 text-white">
+                                <h1 class="mb-5 text-color2">Fashion App</h1>
+                                <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, voluptate.</p>
+                                <button class="inline-block bg-color2 text-color1 text-xl font-bold mr-5 px-5 py-1 rounded-lg shadow-md md:mb-3 lg:mb-0">&lt; &gt;</button>
+                                <button class="inline-block bg-color2 text-color1 text-lg font-bold  mr-5 px-5 py-1 rounded-lg shadow-md">Demo</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Skills-->
+        <section id="skills" class=" my-5 md:my-10">
+            <div class="heading px-5 my-5 md:px-10 xl:px-20">
+                <h1 class="font-raleway uppercase text-xl font-bold text-color1 tracking-wider">Skills</h1>
+                <h3 class="font-splash font-bold text-color2 tracking-widest text-xl -mt-1">My Abilities</h3>
+            </div>
+            <div class="bg-color1 py-10 md:py-20 lg:py-20 skills-bg">
+                <div class="container mx-auto md:w-2/4">
+                    <div class="flex flex-col justify-center items-center lg:flex-row md:gap-10">
+                        <div class="flex flex-col justify-center items-center mb-5 md:mb-0">
+                            <i class="fa-solid fa-laptop-code text-3xl text-center mb-1 text-color2 text-xl"></i>
+                            <h2 class="font-bold text-center font-raleway tracking-widest text-color2 mb-5">FrontEnd</h2>
+                            <div class="frontend">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/html.svg" title="HTML5" alt="HTML5">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/css-3.svg" title="CSS3" alt="CSS3">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/logo-javascript.svg" title="Javascript" alt="Javascript">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/react-2.svg" title="ReactJS" alt="ReactJS">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/typescript.svg" title="Typescript" alt="Typescript">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/tailwind-css-2.svg" title="TailwindCSS" alt="TailwindCSS">
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center mb-5 md:mb-0">
+                            <i class="fa-solid fa-laptop-code text-3xl text-center mb-1 text-color2 text-xl"></i>
+                            <h2 class="font-bold text-center font-raleway tracking-widest text-color2 mb-5">BackEnd</h2>
+                            <div class="backend">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/nodejs.svg" title="NodeJS" alt="NodeJS">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/express-109.svg" title="ExpressJS" alt="ExpressJS">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/php-1.svg" title="PHP" alt="PHP">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/laravel-1.svg" title="Laravel" alt="Laravel">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/next-js.svg" title="NextJS" alt="NextJS">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/mongodb-icon-1.svg" title="MongoDB" alt="MongoDB">
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center">
+                            <i class="fa-solid fa-gears text-3xl text-center mb-1 text-color2 text-xl"></i>
+                            <h2 class="font-bold text-center font-raleway tracking-widest text-color2 mb-5">Other Tools</h2>
+                            <div class="othertools">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/photoshop-cc-4.svg" title="Photoshop" alt="Photoshop">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/figma-1.svg" title="Figma" alt="Figma">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/adobe-illustrator-cs6.svg" title="Adobe Illustrator" alt="Adobe Illustrator">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/git-icon.svg" title="Git" alt="Git">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/red-hat.svg" title="RHEL" alt="RHEL">
+                                <img class="w-12 h-12 inline-block mr-4 mb-5" src="./assets/red-hat.svg" title="RHEL" alt="RHEL">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About-->
+        <section id="about" class=" my-5 md:my-10">
+            <div class="heading px-5 my-5 md:px-10 xl:px-20">
+                <h1 class="font-raleway uppercase text-xl font-bold text-color1 tracking-wider">About Me</h1>
+                <h3 class="font-splash font-bold text-color2 tracking-widest text-xl -mt-1">My Intro</h3>
+            </div>
+            <div class="bg-slate-100 py-10 md:py-20 lg:py-20">
+                <div class="container mx-auto md:w-3/4 lg:h-2/5">
+                    <div class="flex flex-col-reverse justify-center items-center gap-5 md:flex-row ">
+                        <!--Left Side-->
+                        <div class="md:w-1/2 mx-5 md:mx-0">
+                            <img src="./assets/programmer.svg" alt="Programmer">
+                        </div>
+                        <!--Right Side-->
+                        <div class="md:w-1/2">
+                            <p class="px-5 pb-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quam? Vero, placeat praesentium doloremque temporibus, nesciunt perferendis esse et porro ipsa adipisci laboriosam repudiandae. Esse distinctio recusandae tempora cumque eum?</p>
+                            <!--About Me Cards-->
+                            <div class="flex flex-row w-full justify-center items-center m-5">
+                                <div class="about-card text-white bg-color2 w-1/3 p-4 rounded-md mx-5 text-center">
+                                    <i class="fa fa-history text-2xl pb-2" aria-hidden="true"></i>
+                                    <h2 >Experience</h2>
+                                    <p >3+ Years</p>
+                                </div>
+                                <div class="about-card text-white bg-color2 w-1/3 p-4 rounded-md mx-5 text-center">
+                                    <i class="fas fa-project-diagram text-2xl pb-2"></i> 
+                                    <h2>Projects</h2>
+                                    <p>20+</p>
+                                </div>
+                                <div class="about-card text-white bg-color2 w-1/3 p-4 rounded-md mx-5 text-center">
+                                    <i class="fa-solid fa-circle-dollar-to-slot text-2xl pb-2"></i>
+                                    <h2>Contributes</h2>
+                                    <p>100+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="design-process" class=" my-5 md:my-10">
+            <div class="heading px-5 my-5 md:px-10 xl:px-20">
+                <h1 class="font-raleway uppercase text-xl font-bold text-color1 tracking-wider">Design Process</h1>
+                <h3 class="font-splash font-bold text-color2 tracking-widest text-xl -mt-1">My Process</h3>
+            </div>
+            <div class="bg-color1 py-10 md:py-20 lg:py-20 ">
+                <div class="tabs md:w-4/5 lg:w-3/4 mx-auto">
+                    <div class="process-tabs">
+                        <ul class="text-white text-center list-none">
+                            <li><a class="bg-color2 px-5 py-2 rounded-md mr-2" href="#process-call"><span class="text-color2 font-splash text-xl mr-2">01</span>Make a Call</a></li>
+                            <li><a class="bg-color2 px-5 py-2 rounded-md mr-2" href="#process-design"><span class="text-color2 font-splash text-xl mr-2">02</span>Design Process</a></li>
+                            <li><a class="bg-color2 px-5 py-2 rounded-md mr-2" href="#process-build"><span class="text-color2 font-splash text-xl mr-2">03</span>Build Process</a></li>
+                            <li><a class="bg-color2 px-5 py-2 rounded-md" href="#process-launch"><span class="text-color2 font-splash text-xl mr-2">04</span>Launch</a></li>
+                        </ul>
+
+                        <div id="process-call">
+                            <div class="process flex bg-slate-100 p-10 justify-center items-center rounded-md">
+                                <div class="p-5 w-3/4">
+                                    <img src="./assets/call.svg" alt="Make a Call">
+                                </div>
+                                <div class="">
+                                    <h1 class="text-color2 font-raleway text-3xl pb-3 md:text-5xl md:pb-5">01</h1>
+                                    <h1 class=" font-bold font-raleway pb-3 md:text-3xl">Make a Call</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis earum quae dignissimos explicabo commodi impedit culpa nostrum maiores accusamus?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="process-design">
+                            <div class="process flex gap-5 bg-slate-100 p-10 justify-center items-center rounded-md">
+                                <div class="w-3/4">
+                                    <img src="./assets/design-process.svg" alt="Design Process">
+                                </div>
+                                <div class="">
+                                    <h1 class="text-color2 font-raleway text-3xl pb-3 md:text-5xl md:pb-5">02</h1>
+                                    <h1 class=" font-bold font-raleway pb-3 md:text-3xl">Design Process</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis earum quae dignissimos explicabo commodi impedit culpa nostrum maiores accusamus?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="process-build">
+                            <div class="process flex bg-slate-100 p-10 justify-center items-center rounded-md">
+                                <div class="w-3/4">
+                                    <img src="./assets/build-process.svg" alt="Build Process">
+                                </div>
+                                <div class="">
+                                    <h1 class="text-color2 font-raleway text-3xl pb-3 md:text-5xl md:pb-5">03</h1>
+                                    <h1 class=" font-bold font-raleway pb-3 md:text-3xl">Build Process</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis earum quae dignissimos explicabo commodi impedit culpa nostrum maiores accusamus?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="process-launch">
+                            <div class="process flex bg-slate-100 p-10 justify-center items-center rounded-md">
+                                <div class="w-3/4">
+                                    <img src="./assets/launch.svg" alt="Launch">
+                                </div>
+                                <div class="">
+                                    <h1 class="text-color2 font-raleway text-3xl pb-3 md:text-5xl md:pb-5">04</h1>
+                                    <h1 class=" font-bold font-raleway pb-3 md:text-3xl">Launch Design</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis earum quae dignissimos explicabo commodi impedit culpa nostrum maiores accusamus?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="testimonials" class=" my-5 md:my-10 bg-slate-100">
+            <div class="wrapper flex flex-col md:flex-row md:items-center">
+                <div class="heading px-5 my-5 md:basis-1/4  md:px-10 xl:px-20">
+                    <h1 class="font-raleway uppercase text-xl font-bold text-color1 tracking-wider">Testimonials</h1>
+                    <h3 class="font-splash font-bold text-color2 tracking-widest text-xl -mt-1">What Others Say</h3>
+                </div>
+                <div class="my-slider md:basis-3/4">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="testimonial item text-white p-10 rounded-md bg-color1">
+                                <div class="flex justify-between">
+                                    <div class="flex-1">
+                                        <h3 class="ml-5 font-raleway font-bold text-lg">Quality Support</h3>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="stars text-right mr-5">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="my-8 px-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem doloribus laborum repellat facilis, velit aspernatur officia nisi reprehenderit eligendi delectus?</p>
+                                <div class="flex items-center mb-5">
+                                    <div class="basis-1/3 md:basis-1/5">
+                                        <img class="p-1 w-16 h-16 object-cover rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="./assets/person1.jfif" alt="John Doe">
+                                    </div>
+                                    <div class="basis-2/3 md:basis-4/5">
+                                        <p>John Doe</p>
+                                        <p>Senior Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="testimonial item  text-white p-10 rounded-md bg-color1">
+                                <div class="flex justify-between">
+                                    <div class="flex-1">
+                                        <h3 class="ml-5 font-raleway font-bold text-lg">Quality Support</h3>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="stars text-right mr-5">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="my-8 px-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem doloribus laborum repellat facilis, velit aspernatur officia nisi reprehenderit eligendi delectus?</p>
+                                <div class="flex items-center mb-5">
+                                    <div class="basis-1/3 md:basis-1/5">
+                                        <img class="p-1 w-16 h-16 object-cover rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="./assets/person2.jpg" alt="John Doe">
+                                    </div>
+                                    <div class="basis-2/3 md:basis-4/5">
+                                        <p>John Doe</p>
+                                        <p>Senior Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="testimonial item  text-white p-10 rounded-md bg-color1">
+                                <div class="flex justify-between">
+                                    <div class="flex-1">
+                                        <h3 class="ml-5 font-raleway font-bold text-lg">Quality Support</h3>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="stars text-right mr-5">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="my-8 px-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem doloribus laborum repellat facilis, velit aspernatur officia nisi reprehenderit eligendi delectus?</p>
+                                <div class="flex items-center mb-5">
+                                    <div class="basis-1/3 md:basis-1/5">
+                                        <img class="p-1 w-16 h-16 object-cover rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="./assets/person3.jpg" alt="John Doe">
+                                    </div>
+                                    <div class="basis-2/3 md:basis-4/5">
+                                        <p>John Doe</p>
+                                        <p>Senior Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination text-white bg-color2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    
+    
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/responsive-tabs/js/jquery.responsiveTabs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

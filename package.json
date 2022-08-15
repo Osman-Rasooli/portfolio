@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch"
+  },
+  "author": "Mohammad Osman Rasooli",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.7"
+  },
+  "dependencies": {
+    "git": "^0.1.5",
+    "jquery": "^3.6.0",
+    "owl-carousel": "^1.0.0",
+    "responsive-tabs": "^1.6.3",
+    "swiper": "^8.3.2"
+  }
+}
