@@ -126,6 +126,47 @@
     background-color: #000;
 }
 
+.disable-scrolling {
+    overflow: hidden;
+    height: 100%;
+}
+
+.scrolled-nav {
+    background-color: #091353;
+    box-shadow: 0 8px 6px -9px #999;
+}
+
+/************************************************/
+
+/*******************Contact Form***************************/
+
+
+.contact-right {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+.contact-right input {
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+    border-color: #091353;
+}
+
+.contact-right textarea {
+    min-height: 164px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 15px;
+}
+
 
 /*****************************************************/
 
@@ -228,4 +269,20 @@ div.my-slider .swiper.mySwiper {
         color: #9D84B7;
     }
     
+}
+
+
+@media screen and (min-width: 768px) {
+    .watermark {
+        top: 250px;
+    }
+    #menu-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-items {
+        display: none;
+    }
 }

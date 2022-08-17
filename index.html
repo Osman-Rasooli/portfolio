@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./dist/style.css">
 
 </head>
-<body class="relative"> 
+<body class="relative m-0 p-0"> 
     <div id="preloader">
         <div class="gooey">
             <span class="dot"></span>
@@ -22,18 +22,18 @@
             </div>
         </div>
     </div>
-    <header  id="hero" >
+    <header class="relative">
         <!--NAVBAR-->
-        <nav class="container mx-auto p-4">
+        <nav class="fixed z-50 top-0 left-0 right-0  p-4 md:px-10 transition-all duration-300 linear">
             <!--Flex Container-->
             <div class="flex items-center justify-between sm:justify-between">
                 <!--LOGO Text-->
-                <a href="/" id="hero-name" class="font-splash font-bold text-white z-40 text-lg">Osman Rasooli</a>
+                <a href="/" id="hero-name" class="font-splash ml-5 font-bold text-white z-40 text-lg">Osman Rasooli</a>
                 
                 <!--absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold z-10000 bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md-->
                 
                 <!--Menu Items-->
-                <div class="hidden md:flex space-x-6">
+                <div class="menu-items md:flex space-x-6 ">
                     <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Work</a>
                     <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Skills</a>
                     <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">About</a>
@@ -45,7 +45,7 @@
                     
                 </div>
                 <!--Hamburger Menu-->
-                <button id="menu-btn" class="block hamburger md:hidden z-40 focus:outline-none">
+                <button id="menu-btn" class="block hamburger  z-40 focus:outline-none">
                     <span class="hamburger-top "></span>
                     <span class="hamburger-middle"></span>
                     <span class="hamburger-bottom"></span>
@@ -66,25 +66,26 @@
                 </div>
             </div>
         </nav>
-        <!--HERO-->
-        <div class="container relative flex flex-col md:flex-row  pt-6 mx-auto md:mt-20 space-y-0 md:space-y-0 ">
+       
+    </header>
+    <main>
+         <!--HERO-->
+         <div  id="hero"  class="flex flex-col md:flex-row md:items-center pt-20 md:h-screen md:px-10 space-y-0 md:space-y-0 ">
             <!--Left Side-->
-            <div class="flex flex-col mb-10 md:w-1/2 xl:ml-12 relative z-10">
-                <h3 class="max-w-md text-md text-center md:text-left text-white  z-10">Hi, I am</h3>
+            <div class="flex flex-col mb-10 md:w-1/2 xl:ml-12 relative ">
+                <h3 class="max-w-md text-md text-center md:text-left text-white ">Hi, I am</h3>
                 <h1 class="max-w-md text-4xl my-8 md:mt-32 font-raleway leading-none uppercase font-bold text-center md:text-5xl lg:text-5xl md:text-left">Osman Rasooli</h1>
                 <h2 class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl lg:mt-0  md:text-left z-10">A Full Stack Web Developer</h2>
                 <h2 class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl md:text-left">A UX/UI Designer</h2>
             </div>
             <!--Right Side-->
-            <div class="md:w-1/2 relative z-10">
+            <div class="md:w-1/2 md:mt-32 relative z-10">
                 <img  src="./assets/SoftwareDeveloper.svg" alt="Web Developer">
             </div>
-            <div class="hidden md:block md:absolute md:font-light text-gray-200 opacity-40 lg:text-9xl md:text-8xl md:top-14  tracking-widest z-1">
+            <div class="watermark hidden md:block md:absolute md:font-light text-gray-200 opacity-40 lg:text-9xl md:text-8xl  tracking-widest z-1">
                 <h1 class="font-splash pl-10">Osman Rasooli</h1>
             </div>
         </div>
-    </header>
-    <main>
         <!--Projects-->
         <section id="projects" class=" my-5 md:my-10">
             <div class="heading px-5 my-5 md:px-10 xl:px-20">
@@ -390,6 +391,43 @@
                 </div>
             </div>
         </section>
+        <section id="contact" class=" my-5 md:my-10">
+            <div class="heading px-5 my-5 mt-10 md:px-10 xl:px-20">
+                <h1 class="font-raleway uppercase text-xl font-bold text-color1 tracking-wider">Contact</h1>
+                <h3 class="font-splash font-bold text-color2 tracking-widest text-xl -mt-1">Get in Touch</h3>
+            </div>
+            <div class="container mx-auto">
+                <div class="">
+                    <div class="flex flex-col items-center py-10 justify-center px-5 gap-5 border-color1 border-2 rounded-md md:flex-row md:border-0">
+                        <div class="contact-left mb-10 md:mb-0 md:w-1/2 xl:w-1/4">
+                            <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos distinctio aliquid nemo, beatae consectetur eveniet?</p>
+                            <h1 class=" font-bold text-lg mb-4">Afghanistan</h1>
+                            <p class="mb-3"><i class="fa-solid fa-mobile-screen text-color1 text-lg mr-3"></i> (+93) 786 40 87 60</p>
+                            <p class="mb-3"><i class="fa-solid fa-envelope text-color1 text-lg mr-3"></i> mohammad.osmanrasooli1973@gmail.com</p>
+                            <p class="mb-3"><i class="fa-solid fa-location-dot text-color1 text-lg mr-3"></i> Karta e Mamorin, 1st Road, Kabul</p>
+                            <div class="contact-socials mt-5">
+                                <a href="https://github.com/Osman-Rasooli/Osman-Rasooli" target="_blank" class="mr-3"><i class="fa-brands fa-square-github text-4xl text-color1 hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
+                                <a href="https://www.facebook.com/rasooli.osman" target="_blank" class="mr-3"><i class="fa-brands fa-linkedin text-4xl text-color1 hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
+                                <a href="" class="mr-3"><i class="fa-brands fa-square-twitter text-4xl text-color1 hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-right p-5 md:w-1/2 xl:w-2/4">
+                            <h1 class=" font-bold text-lg font-raleway tracking-wide mt-5 mb-3 mr-5">Let's have a chat. <i class="fa-solid fa-mug-hot text-color1 text-2xl"></i></h1>
+                            <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, distinctio.</p>
+                            <form action="" method="post">
+                                <div class="flex flex-col lg:flex-row">
+                                    <input type="text" placeholder="Your Name" name="name" class="lg:mr-2 mb-3 flex-1 ">
+                                    <input type="tel" placeholder="Phone No." name="phone" class=" mb-3 flex-1 lg:pr-1">
+                                </div>
+                                <input type="email" placeholder="Email Address" name="email" class="w-full mb-3">
+                                <textarea name="Message..." placeholder="message" class="w-full mb-3"></textarea>
+                                <button type="submit" class=" bg-color1 font-bold text-white block py-3 px-7 rounded-lg shadow-md hover:text-color1 hover:bg-color2 transition-all duration-150 ease-in">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         
     </main>
@@ -417,7 +455,7 @@
             <div class="md:w-1/4 mt-7">
                 <h2 class="mb-4">Get in touch</h2>
                 <div class="flex gap-5">
-                    <a href=""><i class="fa-brands fa-square-github text-5xl hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
+                    <a href="https://github.com/Osman-Rasooli/Osman-Rasooli" target="_blank"><i class="fa-brands fa-square-github text-5xl hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin text-5xl hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
                     <a href=""><i class="fa-brands fa-square-twitter text-5xl hover:text-sky-600 transition-all duration-150 ease-in"></i></a>
                     <a href=""><i class="fa-solid fa-envelope text-5xl hover:text-sky-600 transition-all duration-150 ease-in"></i></a>

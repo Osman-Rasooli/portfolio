@@ -14,6 +14,8 @@ $(function() {
 
 // Hamburger Menu
 $('#menu-btn').on('click', function() {
+  $('html, body').toggleClass('disable-scrolling');
+
   $('#menu-btn').toggleClass('open');
   $('#menu').toggleClass('w-0');
   $('.link').toggleClass('opacity-0');
@@ -23,6 +25,25 @@ $('#menu-btn').on('click', function() {
   $('.hamburger-bottom').toggleClass('menu-btn-open-style');
   $('#hero-name').toggleClass('text-black');
 });
+
+// Scrolled Nav
+
+$(function() {
+  $(window).on('load', function() {
+    if($(window).scrollTop() > 50) {
+      $('nav').addClass('scrolled-nav');
+    } else {
+      $('nav').removeClass('scrolled-nav');
+    }
+  });
+  $(window).on('scroll', function() {
+    if($(window).scrollTop() > 50) {
+      $('nav').addClass('scrolled-nav');
+    } else {
+      $('nav').removeClass('scrolled-nav');
+    }
+  });
+})
 
 
 var swiper = new Swiper(".mySwiper", {
