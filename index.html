@@ -8,10 +8,11 @@
     <script src="https://kit.fontawesome.com/4e50d35c46.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./node_modules/responsive-tabs/css/responsive-tabs.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="./dist/style.css">
 
 </head>
-<body class="relative m-0 p-0"> 
+<body class="relative m-0 p-0 scrol"> 
     <div id="preloader">
         <div class="gooey">
             <span class="dot"></span>
@@ -28,19 +29,20 @@
             <!--Flex Container-->
             <div class="flex items-center justify-between sm:justify-between">
                 <!--LOGO Text-->
-                <a href="/" id="hero-name" class="font-splash ml-5 font-bold text-white z-40 text-lg">Osman Rasooli</a>
+                <a href="#hero" id="hero-name" class="font-splash ml-5 font-bold text-white z-40 text-lg smooth-scroll">Osman Rasooli</a>
                 
                 <!--absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold z-10000 bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md-->
                 
                 <!--Menu Items-->
                 <div class="menu-items md:flex space-x-6 ">
-                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Work</a>
-                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Skills</a>
-                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">About</a>
-                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Design Process</a>
-                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Testimonials</a>
+                    <a href="#hero" class="active smooth-scroll"></a>
+                    <a href="#projects" class="text-white hover:text-sky-600 uppercase cursor-pointer smooth-scroll">Works</a>
+                    <a href="#skills" class="text-white hover:text-sky-600 uppercase cursor-pointer smooth-scroll">Skills</a>
+                    <a href="#about" class="text-white hover:text-sky-600 uppercase cursor-pointer smooth-scroll">About</a>
+                    <a href="#design-process" class="text-white hover:text-sky-600 uppercase cursor-pointer smooth-scroll">Design Process</a>
+                    <a href="#testimonials" class="text-white hover:text-sky-600 uppercase cursor-pointer smooth-scroll">Testimonials</a>
                     <!--<a href="#" class="text-white hover:text-sky-600 cursor-pointer">Blog</a>-->
-                    <a href="#" class="text-white hover:text-sky-600 uppercase cursor-pointer">Contact</a>
+                    <a href="#contact" class="text-white hover:text-sky-600 uppercase cursor-pointer smooth-scroll">Contact</a>
 
                     
                 </div>
@@ -55,13 +57,13 @@
                 <!--Mobile Menu-->
                 <div id="menu" class="fixed bottom-0 right-0 w-0 opacity-0 bg-white z-30 md:hidden">
                     <div class=" flex flex-col justify-center items-center h-screen">
-                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">Work</a>
-                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">Skills</a>
-                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">About</a>
-                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">Design Process</a>
-                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">Testimonials</a>
+                        <a href="#projects" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer smooth-scroll">Works</a>
+                        <a href="#skills" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer smooth-scroll">Skills</a>
+                        <a href="#about" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer smooth-scroll">About</a>
+                        <a href="#design-process" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer smooth-scroll">Design Process</a>
+                        <a href="#testimonials" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer smooth-scroll">Testimonials</a>
                         <!--<a href="#" class="hover:text-sky-600 cursor-pointer">Blog</a>-->
-                        <a href="#" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer">Contact</a>
+                        <a href="#contact" class="link text-3xl text-color1 opacity-0 transition-opacity tracking-widest pb-6 font-bold uppercase hover:text-sky-600 cursor-pointer smooth-scroll">Contact</a>
                     </div>
                 </div>
             </div>
@@ -70,22 +72,22 @@
     </header>
     <main>
          <!--HERO-->
-         <div  id="hero"  class="flex flex-col md:flex-row md:items-center pt-20 md:h-screen md:px-10 space-y-0 md:space-y-0 ">
+         <section  id="hero"  class="flex flex-col md:flex-row md:items-center pt-20 md:h-screen md:px-10 space-y-0 md:space-y-0 ">
             <!--Left Side-->
             <div class="flex flex-col mb-10 md:w-1/2 xl:ml-12 relative ">
                 <h3 class="max-w-md text-md text-center md:text-left text-white ">Hi, I am</h3>
-                <h1 class="max-w-md text-4xl my-8 md:mt-32 font-raleway leading-none uppercase font-bold text-center md:text-5xl lg:text-5xl md:text-left">Osman Rasooli</h1>
-                <h2 class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl lg:mt-0  md:text-left z-10">A Full Stack Web Developer</h2>
-                <h2 class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl md:text-left">A UX/UI Designer</h2>
+                <h1 id="hero-name" class="max-w-md text-4xl my-8 md:mt-32 font-raleway leading-none uppercase font-bold text-center animate__animated animation-delay md:text-5xl lg:text-5xl md:text-left">Osman Rasooli</h1>
+                <h2 id="hero-desc" class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl animate__animated animation-delay lg:mt-0  md:text-left z-10">A Full Stack Web Developer</h2>
+                <h2 id="hero-desc2" class="font-raleway text-md text-center text-sky-900 font-extrabold tracking-widest md:text-xl animate__animated animation-delay md:text-left">A UX/UI Designer</h2>
             </div>
             <!--Right Side-->
-            <div class="md:w-1/2 md:mt-32 relative z-10">
-                <img  src="./assets/SoftwareDeveloper.svg" alt="Web Developer">
+            <div id="hero-img" class="md:w-1/2 md:mt-32 relative z-10">
+                <img class="animate__animated" src="./assets/SoftwareDeveloper.svg" alt="Web Developer">
             </div>
             <div class="watermark hidden md:block md:absolute md:font-light text-gray-200 opacity-40 lg:text-9xl md:text-8xl  tracking-widest z-1">
                 <h1 class="font-splash pl-10">Osman Rasooli</h1>
             </div>
-        </div>
+        </section>
         <!--Projects-->
         <section id="projects" class=" my-5 md:my-10">
             <div class="heading px-5 my-5 md:px-10 xl:px-20">
@@ -468,6 +470,7 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/responsive-tabs/js/jquery.responsiveTabs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./node_modules/wow.js/dist/wow.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

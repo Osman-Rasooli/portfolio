@@ -1149,32 +1149,24 @@ video {
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
 }
 
-.transition-opacity{
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.duration-150{
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.duration-700{
-  transition-duration: 700ms;
-}
-
-.duration-1000{
-  transition-duration: 1000ms;
 }
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-150{
+  transition-duration: 150ms;
 }
 
 .ease-in{
@@ -1331,6 +1323,10 @@ video {
   box-shadow: 0 8px 6px -9px #999;
 }
 
+.active {
+  border-bottom: 1px solid #9D84B7;
+}
+
 /************************************************/
 
 /*******************Contact Form***************************/
@@ -1482,6 +1478,15 @@ div.my-slider .swiper.mySwiper {
   .menu-items {
     display: none;
   }
+}
+
+/*********************************Animation*/
+
+.animation-delay {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .hover\:bg-color2:hover{

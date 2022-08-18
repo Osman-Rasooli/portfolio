@@ -136,6 +136,11 @@
     box-shadow: 0 8px 6px -9px #999;
 }
 
+.active {
+    border-bottom: 1px solid #9D84B7;
+}
+
+
 /************************************************/
 
 /*******************Contact Form***************************/
@@ -285,4 +290,10 @@ div.my-slider .swiper.mySwiper {
     .menu-items {
         display: none;
     }
+}
+
+/*********************************Animation*/
+.animation-delay {
+    animation-delay: 1s;
+    animation-duration: 1.5s;
 }

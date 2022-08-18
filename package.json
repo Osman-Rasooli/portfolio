@@ -13,10 +13,12 @@
     "tailwindcss": "^3.1.7"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "git": "^0.1.5",
     "jquery": "^3.6.0",
     "owl-carousel": "^1.0.0",
     "responsive-tabs": "^1.6.3",
-    "swiper": "^8.3.2"
+    "swiper": "^8.3.2",
+    "wow.js": "^1.2.2"
   }
 }
