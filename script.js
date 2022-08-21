@@ -115,8 +115,9 @@ $(function() {
 })
 
 $(window).on('load', function() {
+  new WOW().init();
   $('h1#hero-name').addClass('animate__fadeInDown');
   $('#hero-desc').addClass('animate__fadeInUp');
   $('#hero-desc2').addClass('animate__fadeInUp');
-  $('div#hero-img img').addClass('animate__fadeInRight');
+  $('div#hero-img img').addClass('animate__zoomIn');
 });

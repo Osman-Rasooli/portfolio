@@ -690,12 +690,12 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
 .mr-5{
   margin-right: 1.25rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .mb-1{
@@ -958,11 +958,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -971,6 +966,11 @@ video {
 .px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pb-6{
@@ -1487,6 +1487,83 @@ div.my-slider .swiper.mySwiper {
           animation-delay: 1s;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
+}
+
+/***************************************************/
+
+.cardd {
+  position: relative;
+  height: 450px;
+  color: #a18a96;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card_1 {
+  background: url('../assets/weather.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.card_2 {
+  background: url('../assets/fashion.webp') center no-repeat;
+  background-size: cover;
+}
+
+.card_3 {
+  background: url('../assets/todo.webp') center no-repeat;
+  background-size: cover;
+}
+
+.card__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  transform: translateY(70px);
+  transition: transform .25s;
+}
+
+.card__content::before {
+  content: '';
+  position: absolute;
+  top: -47px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  box-shadow: inset 48px 48px #fff;
+}
+
+.card__title {
+  color: #6a515e;
+  line-height: 15px;
+}
+
+.card__subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.card__desc {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.cardd:hover .card__content {
+  transform: translateY(0);
+}
+
+.cardd:hover .card__desc {
+  opacity: 1;
+  margin: .4em 0;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
 }
 
 .hover\:bg-color2:hover{
