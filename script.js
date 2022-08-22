@@ -121,3 +121,41 @@ $(window).on('load', function() {
   $('#hero-desc2').addClass('animate__fadeInUp');
   $('div#hero-img img').addClass('animate__zoomIn');
 });
+
+$(function() {
+  $('#contact-form').on('submit', function(e) {
+    e.preventDefault();
+    /*
+    $.ajax({
+      url: "https://formsubmit.co/el/fosone",
+      method: "POST",
+      data: {
+          name: $('#contact-name').val(),
+          email: $('#contact-email').val(),
+          phone: $('#contact-phone').val(),
+          message: $('#contact-message').val()
+      },
+      dataType: "json"
+  })
+  */
+  $.ajax({
+    method: 'POST',
+    url: 'https://formsubmit.co/ajax/f15594cc77de132498c67c3791dc8773',
+    dataType: 'json',
+    accepts: 'application/json',
+    data: {
+      name: $('#contact-name').val(),
+      email: $('#contact-email').val(),
+      phone: $('#contact-phone').val(),
+      message: $('#contact-message').val()
+    },
+    success: (data) => {
+      $('#contact-submit').html('Sent!');
+      $('#contact-submit').css("background-color", "green");
+      $('#contact-submit').css("color", "white");
+    },
+    error: (err) => console.log(err)
+});
+
+  })
+})

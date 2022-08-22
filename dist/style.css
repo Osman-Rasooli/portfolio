@@ -1566,9 +1566,19 @@ div.my-slider .swiper.mySwiper {
           animation-delay: .25s;
 }
 
+.about-card:hover i.about-icon {
+  transform: scale(1.1);
+  transition: all .3s ease-in;
+}
+
 .hover\:bg-color2:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(157 132 183 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-color1:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 19 83 / var(--tw-bg-opacity));
 }
 
 .hover\:text-sky-600:hover{

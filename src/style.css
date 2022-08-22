@@ -365,3 +365,8 @@ div.my-slider .swiper.mySwiper {
     margin: .4em 0;
     animation-delay: .25s;
 }
+
+.about-card:hover i.about-icon {
+    transform: scale(1.1);
+    transition: all .3s ease-in;
+}
