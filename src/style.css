@@ -370,3 +370,12 @@ div.my-slider .swiper.mySwiper {
     transform: scale(1.1);
     transition: all .3s ease-in;
 }
+
+@media (max-width: 500px) {
+    .about-me-cards {
+        flex-direction: column;
+    }
+    .about-me-cards > div {
+        margin-bottom: 10px
+    } 
+}

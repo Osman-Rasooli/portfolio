@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,200&family=Splash&display=swap');
 
 /*
-! tailwindcss v3.1.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -353,13 +353,6 @@ textarea {
 */
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -844,6 +837,10 @@ video {
 
 .justify-around{
   justify-content: space-around;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
 }
 
 .gap-5{
@@ -1569,6 +1566,16 @@ div.my-slider .swiper.mySwiper {
 .about-card:hover i.about-icon {
   transform: scale(1.1);
   transition: all .3s ease-in;
+}
+
+@media (max-width: 500px) {
+  .about-me-cards {
+    flex-direction: column;
+  }
+
+  .about-me-cards > div {
+    margin-bottom: 10px
+  }
 }
 
 .hover\:bg-color2:hover{

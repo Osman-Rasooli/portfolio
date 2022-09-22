@@ -4,7 +4,7 @@
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/style.css",
     "watch": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch"
   },
   "author": "Mohammad Osman Rasooli",
