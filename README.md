@@ -23,7 +23,8 @@
 - JS
 - JQuery
 - Animate.css
-- FormSubmit - Ajax API
+- Wow.js
+- FormSubmit
 
 <br>
 
