@@ -11,7 +11,7 @@
 <br />
 
 <p align="center">
-  <img src="./img/screenshots/screenshot1.png">
+  <img src="./assets/screenshots/screenshot1.png">
   <br />
 </p>
 
